@@ -1,19 +1,34 @@
 {
   "name": "storap-lms",
   "version": "1.0.0",
+  "description": "LMS Admin Dashboard",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "electron": "^37.3.1",
-    "electron-builder": "^26.0.12"
+  "build": {
+    "appId": "com.storap.lms",
+    "productName": "LMS Application",
+    "win": {
+      "icon": "icon.png",
+      "target": "nsis"
+    },
+    "mac": {
+      "icon": "icon.png"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "kgspr",
+      "repo": "storap-native-app"
+    }
   },
   "dependencies": {
-    "electron-updater": "^6.6.2"
+    "electron": "^latest",
+    "electron-updater": "^4.4.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^22.0.0"
   }
 }
