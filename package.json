@@ -1,7 +1,7 @@
 {
   "name": "storap-lms",
   "version": "1.0.0",
-  "description": "LMS Admin Dashboard",
+  "description": "Storap LMS App",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -10,7 +10,7 @@
   },
   "build": {
     "appId": "com.storap.lms",
-    "productName": "LMS Application",
+    "productName": "Storap LMS",
     "win": {
       "icon": "icon.png",
       "target": "nsis"
@@ -30,5 +30,11 @@
   },
   "devDependencies": {
     "electron-builder": "^22.0.0"
-  }
+  },
+  "keywords": [
+    "LMS",
+    "Storap",
+    "Class",
+    "Admin"
+  ]
 }
